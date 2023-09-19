@@ -3218,7 +3218,7 @@ footer .right .footerlogo {
         display: block;
     }
     footer .top h1{
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
     footer .top figure img{
         width: 20px;
@@ -3228,6 +3228,7 @@ footer .right .footerlogo {
         width: 60px;
         height: 60px;
         bottom: 50px;
+        right: 20px;
     }
     .sec2 .inner .swiper-pagination{
         bottom: 4rem;
