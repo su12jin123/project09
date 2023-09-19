@@ -3039,7 +3039,7 @@ footer .right .footerlogo {
     }
 
     .sec2 {
-        padding: 8rem 0;
+        padding: 4rem 0;
     }
 
     .sec4 .inner .list .item figure {
@@ -3228,5 +3228,11 @@ footer .right .footerlogo {
         width: 60px;
         height: 60px;
         bottom: 50px;
+    }
+    .sec2 .inner .swiper-pagination{
+        bottom: 4rem;
+    }
+    .sec6{
+        margin-bottom: 10rem;
     }
 }
