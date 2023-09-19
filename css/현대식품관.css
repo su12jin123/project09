@@ -3212,7 +3212,7 @@ footer .right .footerlogo {
     footer .inner .fir .right ul li h1 {
         height: 2.3rem;
     }
-    footer .top {widhh : 60px;
+    footer .top {width : 60px;
                  height: 60px;
                  bottom: 50px; 
 }
@@ -3223,6 +3223,8 @@ width : 20px;
 footer .top h1{
     font-size : 1.6rem;
 }
+    .sec2 .inner .list .item figure .text{
+display : block;}
 }
 
         
