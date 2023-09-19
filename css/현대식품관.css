@@ -3212,7 +3212,17 @@ footer .right .footerlogo {
     footer .inner .fir .right ul li h1 {
         height: 2.3rem;
     }
-    footer .top {widhh : 40px;
-                 height:40px;
+    footer .top {widhh : 60px;
+                 height: 60px;
                  bottom: 50px; 
 }
+    footer .top figure img{
+width : 20px;
+        height: 20px;}
+
+footer .top h1{
+    font-size : 1.6rem;
+}
+}
+
+        
