@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+	font-family: "intrepid";
+	font-style: "normal";
+	font-weight: 400;
+	src: url("font/Intrepid.ttf");
+	/* IE9 Compat Modes */
+	src: url("font/Intrepid.ttf") format("embedded-opentype"),
+	  /* IE6-IE8 */
+	  url("font/Intrepid.ttf") format("truetype"),
+	  /*  Modern Browsers */
+	  url("font/Intrepid.ttf") format("woff"),
+	  /* Modern Browsers */
+	  url("font/Intrepid.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Happiness-Sans";
+	font-style: "normal";
+	font-weight: 400;
+	src: url("font/Happiness-Sans-Regular.ttf");
+	/* IE9 Compat Modes */
+	src: url("font/Happiness-Sans-Regular.ttf") format("embedded-opentype"),
+	  /* IE6-IE8 */
+	  url("font/Happiness-Sans-Regular.ttf") format("truetype"),
+	  /*  Modern Browsers */
+	  url("font/Happiness-Sans-Regular.ttf") format("woff"),
+	  /* Modern Browsers */
+	  url("font/Happiness-Sans-Regular.ttf") format("truetype");
+}  
+@font-face {
+	font-family: "batang";
+	font-style: "light";
+	font-weight: 400;
+	src: url("font/KoPubWorld-Batang-Light.ttf");
+}  
+@font-face {
+	font-family: "batang";
+	font-style: "medium";
+	font-weight: 700;
+	src: url("font/KoPubWorld-Batang-Medium.ttf");
+}  
+@font-face {
+	font-family: "batang";
+	font-style: "bold";
+	font-weight: 900;
+	src: url("font/KoPubWorld-Batang-Bold.ttf");
+}  
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    color: #171717;
+}
+ol, ul, li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}

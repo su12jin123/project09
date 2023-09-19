@@ -1,0 +1,2576 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현대식품관</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/현대식품관.css">
+    <script src="lib/jquery-3.7.0.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="lib/현대식품관.js"></script>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header_pc pc">
+            <div class="inner">
+                <ul class="best">
+                    <li><a href="#">BEST</a></li>
+                    <li><a href="#">NEW</a></li>
+                    <li><a href="#">GIFT</a></li>
+                    <li><a href="#">MAGAZINE</a></li>
+                    <li><a href="#">SALE</a></li>
+                </ul>
+
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="img/header_logo_freex34white.png" alt="">
+                    </a>
+                </h1>
+
+                <ul class="login">
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">JOIN</a></li>
+                    <li><a href="#">MYPAGE</a></li>
+                    <li class="cart3"><a href="#">CART(<span class="cart2">0</span>)</a></li>
+                </ul>
+            </div><!-- inner end -->
+        </header>
+
+        <header class="header_mobile mobile">
+            <div class="inner">
+                <figure><img src="img/icons8-menu-50.png" alt=""></figure>
+                <figure><img src="img/header_logo_freex34(1).png" alt=""></figure>
+
+                <div>
+                    <figure>
+                        <img src="img/icons8-쇼핑-카트-50.png" alt="">
+                    </figure>
+                </div>
+            </div><!-- inner end -->
+    </div><!-- mobild end -->
+    </header>
+
+
+
+
+    <div class="main_visual">
+        <video autoplay muted loop>
+            <source src="img/2023 추석 _ 박찬일 & 박준우 셰프를 이어주는 과일과 와인 _ 더 현대적인 선물 (1) (2).mp4" type="video/mp4">
+
+        </video>
+        <div class="cartlist">
+            <div class="inner">
+                <div class="item">
+                    <figure>
+                        <img src="img/icons8-삭제-장바구니-48 (1).png" alt="">
+                    </figure>
+                    <p><span class="none">장바구니에 담긴 상품이 없습니다.</span><span></span></p>
+                </div><!-- item end -->
+
+            </div><!-- inner end -->
+        </div><!-- cartlist end -->
+
+        <div class="loginpage">
+            <figure class="close">
+                <img src="img/icons8-close-48.png" alt="">
+            </figure>
+            <div class="inner">
+                <form action="">
+                    <h2>로그인</h2>
+                    <p>현대식품관 전용회원은 아이디를 이메일로 입력해 주세요.</p>
+                    <div class="box box1">
+                        <!-- <label for="id">아이디</label> -->
+                        <input type="id" id="id" placeholder="아이디" />
+                    </div><!-- box end -->
+                    <div class="box box2">
+                        <!-- <label for="password">비밀번호</label> -->
+                        <input type="password" id="password" placeholder="비밀번호" />
+                    </div>
+
+
+                    <div class="join">
+                        <div class="check">
+                            <input type="checkbox" name="saveEmail" id="saveEmail" checked={saveIDFlag}
+                                onChange={handleSaveIDFlag} />
+                            <label>
+                                <span>아이디 저장</span>
+                            </label>
+                        </div>
+
+                        <div class="join1">
+                            <span>회원가입</span>
+                            <span>아이디/비밀번호 찾기</span>
+                        </div>
+                    </div><!-- join end -->
+
+                    <div class="btn">
+                        <button>로그인</button>
+                        <button>
+                            <figure><img src="img/icons8-말풍선-60.png" alt=""></figure> 카카오 로그인
+                        </button>
+                        <button>회원가입</button>
+                    </div><!-- btn end -->
+
+                    <div class="join3">
+                        <figure>
+                            <img src="img/header_logo_freex34.png" alt="">
+                        </figure>
+
+                    </div>
+
+
+
+            </div><!-- inner end -->
+        </div><!-- loginpage end -->
+        <div class="mobile_menu mobile">
+            <div class="main">
+                <figure class="menu_logo">
+                    <img src="img/header_logo_freex34(1).png" alt="">
+                </figure>
+                <figure class="close">
+                    <img src="img/icons8-close-48.png" alt="">
+                </figure>
+            </div>
+            <ul class="gnb">
+                <div class="login1">
+                    <p>로그인 후 다양한 혜택을 경험하시기 바랍니다.</p>
+                    <div class="loginbtn">
+                        로그인
+                    </div>
+                </div>
+                <div class="my">
+                    <span>마이페이지</span>
+                    <span>장바구니</span>
+                    <span>좋아요</span>
+                    <span>알림</span>
+                </div>
+                <li class="depth01">
+                    <a href="#">BEST</a>
+                </li>
+                <li class="depth01"> <a href="#">NEW</a></li>
+
+                <li class="depth01">
+                    <a href="#">SALE</a>
+                    <ul class="depth02">
+                        <li>전체보기</li>
+                        <li>정육</li>
+                        <li>과일</li>
+                        <li>생선</li>
+                        <li>그로서리</li>
+                        <li>기타</li>
+                    </ul><!-- depth02 end -->
+                </li><!-- depth01 end -->
+
+                <li class="depth01">
+                    <a href="#">추석선물세트</a>
+                    <ul class="depth02">
+                        <li>전체보기</li>
+                        <li>정육</li>
+                        <li>과일</li>
+                        <li>버섯, 수삼, 더덕</li>
+                        <li>정관장</li>
+                        <li>기타 건강식품</li>
+                        <li>다과, 차류</li>
+                        <li>그로서리</li>
+                    </ul><!-- depth02 end -->
+                </li><!-- depth01 end -->
+
+                <li class="depth01">
+                    <a href="#">과일과 채소</a>
+                    <ul class="depth02">
+                        <li>전체보기</li>
+                        <li>계절과일</li>
+                        <li>일상 채소</li>
+                        <li>버섯, 나물, 두부</li>
+                        <li>샐러드, 쌈채소</li>
+                        <li>냉동, 간편, 건과일</li>
+                        <li>기타</li>
+                    </ul><!-- depth02 end -->
+                </li><!-- depth01 end -->
+
+                <li class="depth01">
+                    <a href="#">생선과 해산물</a>
+                    <ul class="depth02">
+                        <li>전체보기</li>
+                        <li>생선, 해산물</li>
+                        <li>새우, 조개류, 갑각류</li>
+                        <li>김, 미역, 해조류</li>
+                        <li>연어, 간편수산물</li>
+                        <li>멸치, 건어물</li>
+                        <li>기타</li>
+                    </ul><!-- depth02 end -->
+                </li><!-- depth01 end -->
+
+
+                <li class="depth01">
+                    <a href="#">육류와 달걀</a>
+                    <ul class="depth02">
+                        <li>전체보기</li>
+                        <li>소고기</li>
+                        <li>돼지고기</li>
+                        <li>닭, 오리, 양고기</li>
+                        <li>갈비, 양념육</li>
+                        <li>베이컨, 샤퀴테리</li>
+                        <li>달걀류</li>
+                        <li>기타</li>
+                    </ul><!-- depth02 end -->
+                </li><!-- depth01 end -->
+
+                <li class="depth01">
+                    <a href="#">밥과 국, 면</a>
+                    <ul class="depth02">
+                        <li>전체보기</li>
+                        <li>밥, 볶음밥, 도시락</li>
+                        <li>국, 탕, 찌개</li>
+                        <li>면, 스파게티, 국수</li>
+                        <li>라면, 즉석밥</li>
+                        <li>샐러드, 저칼로리식</li>
+                    </ul><!-- depth02 end -->
+                </li><!-- depth01 end -->
+
+
+                <li class="depth01">
+                    <a href="#">밑반찬과 간식</a>
+                    <ul class="depth02">
+                        <li>전체보기</li>
+                        <li>즉석반찬</li>
+                        <li>김치, 젓갈, 장아찌</li>
+                        <li>메인요리, 밀키트</li>
+                        <li>떡볶이, 만두, 냉동간식</li>
+                        <li>죽, 스프, 카레</li>
+                    </ul><!-- depth02 end -->
+                </li><!-- depth01 end -->
+
+                <li class="depth01">
+                    <a href="#">양념과 오일, 통조림</a>
+                    <ul class="depth02">
+                        <li>전체보기</li>
+                        <li>식초, 간장, 장류</li>
+                        <li>소금, 설탕, 조미료, 향신료</li>
+                        <li>소스, 드레싱</li>
+                        <li>식용유, 참기름, 올리브유</li>
+                        <li>밀가루, 분말</li>
+                        <li>육수, 다시팩</li>
+                    </ul><!-- depth02 end -->
+                </li><!-- depth01 end -->
+
+
+                <li class="depth01">
+                    <a href="#">물과 우유, 커피, 음료</a>
+                    <ul class="depth02">
+                        <li>전체보기</li>
+                        <li>생수, 탄산수</li>
+                        <li>우유, 두유, 요거트</li>
+                        <li>탄산음료, 주스</li>
+                        <li>커피</li>
+                        <li>전통주, 논알콜</li>
+                    </ul><!-- depth02 end -->
+                </li><!-- depth01 end -->
+
+                <li class="depth01">
+                    <a href="#">과자와 초콜릿, 캔디</a>
+                    <ul class="depth02">
+                        <li>전체보기</li>
+                        <li>초콜릿, 캔디, 젤리</li>
+                        <li>스낵, 쿠키류</li>
+                        <li>떡, 전통간식</li>
+                        <li>아이스크림</li>
+                    </ul><!-- depth02 end -->
+                </li><!-- depth01 end -->
+
+                <li class="depth01">
+                    <a href="#">리빙, 라이프스타일</a>
+                </li>
+                <li class="depth01">
+                    <a href="#">반려동물 사료와 간식</a>
+                </li>
+            </ul><!-- gnb end -->
+        </div><!-- mobile_menu end -->
+
+    </div><!-- main_visual end -->
+
+    <section class="sec1">
+        <div class="inner">
+            <h1>PREMIUM GIFT</h1>
+            <div class="list">
+                <div class="item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
+                    <figure>
+                        <img src="img/과일.png" alt="">
+                    </figure>
+                    <div class="text">
+
+                        <p>빚깔, 크기, 당도까지<br>가장 맛있는 <span>과일 선물</span></p>
+                    </div>
+                </div><!-- item end -->
+                <div class="item item2" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="3000">
+
+                    <figure>
+                        <img src="img/한우.png" alt="">
+                    </figure>
+                    <div class="text">
+                        <p><span>“한우는 역시 현대지”</span><br>
+                            명절, 가장 옳은 선물</p>
+
+                    </div>
+                </div><!-- item end -->
+                <div class="item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
+
+                    <figure>
+                        <img src="img/생선.png" alt="">
+                    </figure>
+                    <div class="text">
+
+                        <p>전국팔도를 한데 모은<br>
+                            <span>최고급 수산물 선물</span>
+                        </p>
+                    </div>
+                </div><!-- item end -->
+                <div class="item item2" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="3000">
+
+                    <figure>
+                        <img src="img/곶감.png" alt="">
+                    </figure>
+                    <div class="text">
+
+                        <p><span>달콤한 속 깊은 풍미</span>,<br>
+                            귀인을 대접하는 선물</p>
+                    </div>
+
+                </div><!-- item end -->
+                <div class="item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
+
+                    <figure>
+                        <img src="img/쌀.png" alt="">
+                    </figure>
+                    <div class="text">
+
+                        <p><span>우리 땅에서 자란 곡식</span>,<br>
+                            두 손으로 전하는 소중한 마음</p>
+                    </div>
+
+                </div><!-- item end -->
+                <div class="gift_text" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="2000">가장 진하게 연결된 부모와 자녀, 존경과 예우가 공존하는 선후배의 관계를 더욱 두텁게 하는 선물의 순간에<br> 현대백화점이 함께
+                    합니다.
+                </div>
+            </div><!-- list end -->
+
+        </div><!-- inner end -->
+    </section><!-- sec1 end -->
+    <section class="sec2" data-aos="fade-up" data-aos-duration="4000">
+        <div class="inner">
+            <h1>TO HOME BEST</h1>
+            <div class="list">
+                <div class="swiper swiper1">
+                    <div class="swiper-wrapper list">
+
+                        <div class="swiper-slide item">
+                            <figure>
+                                <img src="img/best1.jpg" alt="">
+                                <span>1</span>
+                                <div class="text">
+                                    <h5>[정관장]</h5>
+                                    <p> 홍삼정 에브리타임 (10ml×30포)</p>
+                                    <strong>113,050원</strong>
+                                    <span>133,000</span>
+
+                                </div><!-- text end -->
+                            </figure>
+                        </div>
+                        <div class="swiper-slide item">
+                            <figure>
+                                <img src="img/best2.jpg" alt="">
+                                <span>2</span>
+                                <div class="text">
+                                    <h5>[우미학]</h5>
+                                    <p>1++ 한우 프리미엄 선물세트1호</p>
+                                    <strong>110,000원</strong>
+
+                                </div><!-- text end -->
+                            </figure>
+                        </div>
+                        <div class="swiper-slide item">
+                            <figure>
+                                <img src="img/best3.jpg" alt="">
+                                <span>3</span>
+                                <div class="text">
+                                    <h5>[백제원]</h5>
+                                    <p>솔잎 찐 보리굴비 선물 세트</p>
+                                    <strong>114,000원</strong>
+                                    <span>120,000</span>
+
+
+                                </div><!-- text end -->
+                            </figure>
+                        </div>
+                        <div class="swiper-slide item">
+                            <figure>
+                                <img src="img/best4.jpg" alt="">
+                                <span>4</span>
+                                <div class="text">
+                                    <h5>[곶감투홈]</h5>
+                                    <p>곶감에 더함 선물세트 520g</p>
+                                    <strong>77,000원</strong>
+
+                                </div><!-- text end -->
+                            </figure>
+                        </div>
+                        <div class="swiper-slide item">
+                            <figure>
+                                <img src="img/best5.jpg" alt="">
+                                <span>5</span>
+                                <div class="text">
+                                    <h5>[금돼지식당]</h5>
+                                    <p>모둠 구이 세트</p>
+                                    <strong>58,500원</strong>
+                                    <span>65,000</span>
+
+                                </div><!-- text end -->
+                            </figure>
+                        </div>
+                        <div class="swiper-slide item">
+                            <figure>
+                                <img src="img/best6.jpg" alt="">
+                                <span>6</span>
+                                <div class="text">
+                                    <h5>[메종엠오]</h5>
+                                    <p>문케이크 선물세트</p>
+                                    <strong>58,000원</strong>
+
+                                </div><!-- text end -->
+                            </figure>
+                        </div>
+                        <div class="swiper-slide item">
+                            <figure>
+                                <img src="img/best7.jpg" alt="">
+                                <span>7</span>
+                                <div class="text">
+                                    <h5>[새벽시장]</h5>
+                                    <p>하우스 감귤 800g</p>
+                                    <strong>15,000원</strong>
+
+                                </div><!-- text end -->
+                            </figure>
+                        </div>
+                        <div class="swiper-slide item">
+                            <figure>
+                                <img src="img/best8.jpg" alt="">
+                                <span>8</span>
+                                <div class="text">
+                                    <h5>[브루사]</h5>
+                                    <p>비엘라 카네스트렐리 에디션 2종</p>
+                                    <strong>43,500원</strong>
+
+                                </div><!-- text end -->
+                            </figure>
+                        </div>
+                        <div class="swiper-slide item">
+                            <figure>
+                                <img src="img/best9.jpg" alt="">
+                                <span>9</span>
+                                <div class="text">
+                                    <h5>[설성목장]</h5>
+                                    <p>한우 1++ 안심 스테이크용 200g</p>
+                                    <strong>58,050원</strong>
+                                    <span>64,500</span>
+
+                                </div><!-- text end -->
+                            </figure>
+                        </div>
+                        <div class="swiper-slide item">
+                            <figure>
+                                <img src="img/best10.jpg" alt="">
+                                <span>10</span>
+                                <div class="text">
+                                    <h5>[현대쌀집]</h5>
+                                    <p>[백미4kg] 프리미엄 쌀 (햅쌀)</p>
+                                    <strong>33,600원</strong>
+
+                                </div><!-- text end -->
+                            </figure>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div><!-- list end -->
+        </div><!-- inner end -->
+    </section><!-- sec2 end -->
+
+    <section class="sec3">
+        <div class="inner">
+            <figure>
+                <!-- <img src="img/명인bg.png" alt=""> -->
+
+                <div class="left on">
+                    <figure class="story1">
+                        <img src="img/순창4.jpg" alt="">
+                        <figure class="search">
+                            <img src="img/icons8-돋보기-50 (1).png" alt="">
+                        </figure>
+                    </figure>
+
+                    <figure class="story2">
+                        <img src="img/순창2-1.jpg" alt="">
+                        <figure class="search">
+                            <img src="img/icons8-돋보기-50 (1).png" alt="">
+                        </figure>
+                    </figure>
+                </div><!-- left end 1 -->
+
+                <div class="left">
+                    <figure class="story1">
+                        <img src="img/정춘희4.jpg" alt="">
+                        <figure class="search">
+                            <img src="img/icons8-돋보기-50 (1).png" alt="">
+                        </figure>
+                    </figure>
+
+                    <figure class="story2">
+                        <img src="img/정춘희2-1.jpg" alt="">
+                        <figure class="search">
+                            <img src="img/icons8-돋보기-50 (1).png" alt="">
+                        </figure>
+                    </figure>
+                </div><!-- left end 2-->
+                <div class="left">
+                    <figure class="story1">
+                        <img src="img/한상준1-1.jpg" alt="">
+                        <figure class="search">
+                            <img src="img/icons8-돋보기-50 (1).png" alt="">
+                        </figure>
+                    </figure>
+
+                    <figure class="story2">
+                        <img src="img/한상준3.jpg" alt="">
+                        <figure class="search">
+                            <img src="img/icons8-돋보기-50 (1).png" alt="">
+                        </figure>
+                    </figure>
+                </div><!-- left end -->
+                <div class="left">
+                    <figure class="story1">
+                        <img src="img/김정배3.jpg" alt="">
+                        <figure class="search">
+                            <img src="img/icons8-돋보기-50 (1).png" alt="">
+                        </figure>
+                    </figure>
+
+                    <figure class="story2">
+                        <img src="img/김정배1-1.jpg" alt="">
+                        <figure class="search">
+                            <img src="img/icons8-돋보기-50 (1).png" alt="">
+                        </figure>
+                    </figure>
+                </div><!-- left end 4-- -->
+                <div class="right">
+                    <div class="text">
+                        <h2>명인명촌</h2>
+                        <p>이야기가 있는 숨겨진 보물</p>
+                    </div><!-- text end -->
+                    <div class="select">
+                        <p class="on">순창의 장맛</p>
+                        <p>정춘희 유기참된장</p>
+                        <p>한상준 발효식초</p>
+                        <p>김정배 새우젓</p>
+                    </div>
+                    <figure class="story3">
+                        <!-- <video width="100%" height="700px" controls autoplay>
+                            <source src="img/1759455533 (1).mp4" type="video/mp4">
+                        </video> -->
+                        <!-- <video src="img/1759455533 (1).mp4"></video>  -->
+                        <div class="on"><img src="img/명인3.jpg" alt="">
+                            <p> ‘순창의 장맛’은<br> 이런 저마다의 다른 맛과 향을 살아 있는<br> 발효식품 고유의 특성이라 보고 <br>그중 엄정하게 선정된 으뜸 제품에만 붙이는
+                                이름입니다. 
+                                <br><span>제품 보러가기</span>
+                                <!-- <div class="items">
+                                    <figure><img src="img/순창.jpg" alt=""></figure>
+                                    <figure><img src="img/순창1.jpg" alt=""></figure>
+                                </div> -->
+                            </p>
+                        </div>
+                        <div>
+                            <p>해수로 간을 맞추는 울진 지역의 장 숙성법을 잇고 있는 정춘희 님은 직접 농사지어 가을에 수확한 콩을 사용합니다. <span>제품 보러가기</span> </p>
+                            <img src="img/정춘희3.jpg" alt="">
+
+                        </div>
+                        <div>
+                            <p> 현미를 비롯하여 보리, 수수, 기장, 차조 등 5가지 곡식과 쌀누룩을 황토 옹기에 넣어 자연 발효시킨 구수한 맛의 곡물 식초입니다. <span>제품
+                                    보러가기</span></p>
+                            <img src="img/한상준.jpg" alt="">
+
+
+
+                        </div>
+                        <div>
+                            <p>토굴 숙성은 젓갈의 형태와 맛을 잘 보존하는 데 그 목적이 있습니다.<br> 젓갈마다 토굴의 일정한 온도 10~13℃에서 일정한 숙성기간을 거치고 다시 저온
+                                숙성을 하는 방식을 고수합니다.
+                                <span>제품 보러가기</span>
+                            </p>
+
+                            <img src="img/김정배.jpg" alt="">
+
+                        </div>
+
+
+                    </figure>
+                </div><!-- right end -->
+            </figure>
+        </div><!-- inner end -->
+    </section><!-- sec3 end -->
+
+    <section class="sec4">
+        <div class="inner">
+            <ul class="menu_list">
+                <li class="on">신상품</li>
+                <li>알뜰장보기</li>
+                <li>MD'S PICK</li>
+            </ul><!-- menu_list end -->
+
+
+            <div class="list on" data-aos="fade-up">
+                <div class="item">
+                    <figure>
+                        <img src="img/new1.jpg" alt="">
+                    </figure>
+                    <div class="text1">
+                        <p>[우미학] 1++ 한우 실속 선물세트 2호</p>
+                        <img src="img/cart.png" alt="">
+                    </div>
+                    <div class="text2">
+                        <strong>155,000원</strong>
+                        <div>
+                            <span>신상품</span>
+                            <span>예약배송</span>
+                        </div>
+                    </div><!-- text2 end -->
+                </div><!-- item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/new2.jpg" alt="">
+                    </figure>
+                    <div class="text1">
+                        <p>[새벽시장] 청자두900g</p>
+                        <img src="img/cart.png" alt="">
+                    </div>
+                    <div class="text2">
+                        <strong>27,000원</strong>
+                        <div>
+                            <span>신상품</span>
+                        </div>
+                    </div><!-- text2 end -->
+                </div><!-- item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/new3.jpg" alt="">
+                    </figure>
+                    <div class="text1">
+                        <p>제주 바당 전골</p>
+                        <img src="img/cart.png" alt="">
+                    </div>
+                    <div class="text2">
+                        <strong>100,000원</strong>
+                        <div>
+                            <span>신상품</span>
+                            <span>명절적립</span>
+                        </div>
+                    </div><!-- text2 end -->
+                </div><!-- item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/new4.jpg" alt="">
+                    </figure>
+                    <div class="text1">
+                        <p>[남도애꽃] 찜보리굴비 선물세트</p>
+                        <img src="img/cart.png" alt="">
+                    </div>
+                    <div class="text2">
+                        <div class="sale">
+
+                            <strong>155,000원</strong>
+                            <p>120,000원</p>
+                        </div>
+                        <div>
+                            <span>신상품</span>
+                            <span>명절적립</span>
+                        </div>
+                    </div><!-- text2 end -->
+                </div><!-- item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/new7.jpg" alt="">
+                    </figure>
+                    <div class="text1">
+                        <p>[추석미식회][예약] 한가위 다과 한상 2종 </p>
+                        <img src="img/cart.png" alt="">
+                    </div>
+                    <div class="text2">
+                        <div class="sale">
+                            <strong>187,800원</strong>
+                            <p>135,000원</p>
+                        </div>
+                        <div>
+                            <span>신상품</span>
+                            <span>예약배송</span>
+                            <span>명절적립</span>
+                        </div>
+                    </div><!-- text2 end -->
+                </div><!-- item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/new6.jpg" alt="">
+                    </figure>
+                    <div class="text1">
+                        <p>[명인명촌][예약] 이성래 토종꿀진옥고 환</p>
+                        <img src="img/cart.png" alt="">
+                    </div>
+                    <div class="text2">
+                        <strong>155,000원</strong>
+                        <div>
+                            <span>투홈단독</span>
+                            <span>신상품</span>
+                            <span>명절적립</span>
+                        </div>
+                    </div><!-- text2 end -->
+                </div><!-- item end -->
+            </div><!-- list end -->
+
+
+            <div class="list" data-aos="fade-up">
+                <div class="item">
+                    <figure>
+                        <img src="img/sale1.jpg" alt="">
+                    </figure>
+                    <div class="text1">
+                        <p>[마이셰프] 마라탕&마라샹궈</p>
+                        <img src="img/cart.png" alt="">
+                    </div>
+                    <div class="text2">
+                        <div class="sale">
+                            <strong>10,150원</strong>
+                            <p>14,500원</p>
+                        </div>
+                        <div>
+                            <span>유통기한임박</span>
+                            <span>냉장보관</span>
+                        </div>
+                    </div><!-- text2 end -->
+                </div><!-- item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/sale2.jpg" alt="">
+                    </figure>
+                    <div class="text1">
+                        <p>[마이셰프] 양장피 (596g)</p>
+                        <img src="img/cart.png" alt="">
+                    </div>
+                    <div class="text2">
+                        <div class="sale">
+                            <strong>10,980원</strong>
+                            <p>16,900원</p>
+                        </div>
+                        <div>
+                            <span>유통기한임박</span>
+                            <span>냉장보관</span>
+                        </div>
+                    </div><!-- text2 end -->
+                </div><!-- item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/sale3.jpg" alt="">
+                    </figure>
+                    <div class="text1">
+                        <p>[카트] 의정부 순두부 부대찌개</p>
+                        <img src="img/cart.png" alt="">
+                    </div>
+                    <div class="text2">
+                        <div class="sale">
+                            <strong>11,810원</strong>
+                            <p>13,900원</p>
+                        </div>
+                        <div>
+                            <span>냉장보관</span>
+                        </div>
+                    </div><!-- text2 end -->
+                </div><!-- item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/sale4.jpg" alt="">
+                    </figure>
+                    <div class="text1">
+                        <p>[새벽시장] 푸룬 500g</p>
+                        <img src="img/cart.png" alt="">
+                    </div>
+                    <div class="text2">
+                        <div class="sale">
+                            <strong>10,620원</strong>
+                            <p>12,500원</p>
+                        </div>
+                        <div>
+                            <span>신상품</span>
+                            <span>냉장보관</span>
+                        </div>
+                    </div><!-- text2 end -->
+                </div><!-- item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/sale5.jpg" alt="">
+                    </figure>
+                    <div class="text1">
+                        <p>[가스파드와리사] 원두 3종 중 택 1 (280g / 쇼핑백 증정)</p>
+                        <img src="img/cart.png" alt="">
+                    </div>
+                    <div class="text2">
+                        <div class="sale">
+                            <strong>19,000원</strong>
+                            <p>38,000원</p>
+                        </div>
+                        <div>
+                            <span>명절적립</span>
+                            <span>상온보관</span>
+                        </div>
+                    </div><!-- text2 end -->
+                </div><!-- item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/sale6.jpg" alt="">
+                    </figure>
+                    <div class="text1">
+                        <p>[SUTAS] 카이막 90g</p>
+                        <img src="img/cart.png" alt="">
+                    </div>
+                    <div class="text2">
+                        <div class="sale">
+                            <strong>3,390원</strong>
+                            <p>8,490원</p>
+                        </div>
+                        <div>
+                            <span>냉장보관</span>
+                        </div>
+                    </div><!-- text2 end -->
+                </div><!-- item end -->
+            </div><!-- list end2 -->
+
+
+
+            <div class="list" data-aos="fade-up">
+                <div class="item">
+                    <figure>
+                        <img src="img/md1.jpg" alt="">
+                    </figure>
+                    <div class="text1">
+                        <p>[야카] 약과 3종 (6개입/8개입/12개입)</p>
+                        <img src="img/cart.png" alt="">
+                    </div>
+                    <div class="text2">
+                        <strong>2,500원</strong>
+                        <div>
+                            <span>브랜드직송</span>
+                            <span>H.Bonus적용제외</span>
+                        </div>
+                    </div><!-- text2 end -->
+                </div><!-- item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/md2.jpg" alt="">
+                    </figure>
+                    <div class="text1">
+                        <p>[반찬가게 슈퍼키친] 명절 모듬전 850g (예약판매)</p>
+                        <img src="img/cart.png" alt="">
+                    </div>
+                    <div class="text2">
+                        <strong>39,900원</strong>
+                        <div>
+                            <span>신상품</span>
+                            <span>예약배송</span>
+                        </div>
+                    </div><!-- text2 end -->
+                </div><!-- item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/md3.jpg" alt="">
+                    </figure>
+                    <div class="text1">
+                        <p>[새벽시장] 고추냉이잎 (70g/팩)</p>
+                        <img src="img/cart.png" alt="">
+                    </div>
+                    <div class="text2">
+                        <div class="sale">
+                            <strong>3,400원</strong>
+                            <p>4,000원</p>
+                        </div>
+                        <div>
+                            <span>냉장보관</span>
+                        </div>
+                    </div><!-- text2 end -->
+                </div><!-- item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/md4.jpg" alt="">
+                    </figure>
+                    <div class="text1">
+                        <p>[쌉 SAAP] 톰얌(TOM YUM) 국수 (2인분, 1089g)</p>
+                        <img src="img/cart.png" alt="">
+                    </div>
+                    <div class="text2">
+                        <div class="sale">
+                            <strong>15,130원</strong>
+                            <p>17,800원</p>
+                        </div>
+                        <div>
+                            <span>냉장보관</span>
+                        </div>
+                    </div><!-- text2 end -->
+                </div><!-- item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/md5.jpg" alt="">
+                    </figure>
+                    <div class="text1">
+                        <p>[메종엠오] 무화과 머핀</p>
+                        <img src="img/cart.png" alt="">
+                    </div>
+                    <div class="text2">
+                        <strong>6,500원</strong>
+                        <div>
+                            <span>냉장보관</span>
+                        </div>
+                    </div><!-- text2 end -->
+                </div><!-- item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/md6-1.jpg" alt="">
+                    </figure>
+                    <div class="text1">
+                        <p>[위칙] 건조기시트 섬유유연제 80매</p>
+                        <img src="img/cart.png" alt="">
+                    </div>
+                    <div class="text2">
+                        <div class="sale">
+                            <strong>12,900원</strong>
+                            <p>15,900원</p>
+                        </div>
+                        <div>
+                            <span>신상품</span>
+                        </div>
+                    </div><!-- text2 end -->
+                </div><!-- item end -->
+            </div><!-- list end 3-->
+            <button>더보기 +</button>
+        </div><!-- inner end -->
+    </section><!-- sec4 end -->
+    <section class="sec5">
+        <img src="img/hrjwm.jpg" alt="">
+        <div class="memo" data-aos="fade-up">
+            고소한 전어를 색다르게 맛보고 싶은 분들께<br> 전어 튀김 덮밥을 제안합니다.<br><br> 바삭바삭한 식감이 더해져, 온 가족이 맛있게 즐기기 좋아요.<br>
+            투홈에서는 손질 전어를 보내드리기 때문에<br> 어렵지 않게 요리할 수 있답니다.
+            <br><br><span>클릭해보세요!</span>
+        </div>
+       
+        <div class="name">
+            <p>가을의 감칠맛 <br> <strong>전어튀김 덮밥</strong></p>
+        </div>
+        <div class="item1024">
+           <p> 고소한 전어를 색다르게 맛보고 싶은 분들께 전어 튀김 덮밥을 제안합니다.<br> 바삭바삭한 식감이 더해져, 온 가족이 맛있게 즐기기 좋아요.<br>
+            투홈에서는 손질 전어를 보내드리기 때문에 어렵지 않게 요리할 수 있답니다. <span>조리법 보러가기</span></p>
+            
+            
+        </div>
+
+        <div class="products"><!--  data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500" -->
+            <div class="inner">
+                <figure class="close"><img src="img/icons8-지우다-50.png" alt=""></figure>
+                <h2>관련상품</h2>
+                <div class="swiper swiper3">
+                    <div class="swiper-wrapper list">
+                        <div class="swiper-slide item">
+                            <figure>
+                                <img src="img/item1.jpg" alt="">
+                                <p>보러가기</p>
+                            </figure>
+                            <p>[새벽시장] 깻잎 30장(30g)</p>
+                        </div><!-- item end -->
+                        <div class="swiper-slide item">
+                            <figure>
+                                <p>보러가기</p>
+
+                                <img src="img/item2.jpg" alt="">
+                            </figure>
+                            <p>[풀무원] 김밥김 (20g)</p>
+
+                        </div><!-- item end -->
+                        <div class="swiper-slide item">
+                            <figure>
+                                <p>보러가기</p>
+
+                                <img src="img/item3.jpg" alt="">
+                            </figure>
+                            <p>[테라오카] 계란에 뿌리는 <br>간장소스 (150ml)</p>
+
+                        </div><!-- item end -->
+                        <div class="swiper-slide item">
+                            <figure>
+                                <p>보러가기</p>
+
+                                <img src="img/item4.jpg" alt="">
+                            </figure>
+
+                            <p>[올리타리아] 포도씨유 500ml</p>
+
+                        </div><!-- item end -->
+                        <div class="swiper-slide item">
+                            <figure>
+                                <p>보러가기</p>
+
+                                <img src="img/item5.jpg" alt="">
+                            </figure>
+                            <p>[청정원] 생강&매실 맛술 (410ml)</p>
+
+                        </div><!-- item end -->
+                        <div class="swiper-slide item">
+                            <figure>
+                                <p>보러가기</p>
+
+                                <img src="img/item6.jpg" alt="">
+                            </figure>
+
+                            <p>[굿앤굿] 솔밭 자연방목 유정란 15구 (780g)</p>
+                        </div><!-- item end -->
+                        <div class="swiper-slide item">
+                            <figure>
+                                <p>보러가기</p>
+
+                                <img src="img/item7.jpg" alt="">
+                            </figure>
+                            <p>[굿앤굿] 솔밭 자연방목 유정란 15구 (780g)</p>
+                        </div><!-- item end -->
+                        <div class="swiper-slide item">
+                            <figure>
+                                <p>보러가기</p>
+
+                                <img src="img/item8.jpg" alt="">
+                            </figure>
+                            <p>[굿앤굿] 솔밭 자연방목 유정란 15구 (780g)</p>
+                        </div><!-- item end -->
+
+                    </div>
+
+                </div>
+
+
+                <div class="cook">
+
+                    <div class="left">
+                        <h3>이렇게 요리하세요!</h3>
+                        <div class="swiper swiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="img/cooking.jpg" alt="">
+                                    </figure>
+                                    <div class="text">
+                                        <h1>STEP 1</h1>
+                                        <p>기본 손질이 된 전어는 맛술, 소금을 뿌려 잠시 두었다가 물기를 제거합니다.<br> 단호박과 고구마는 3mm 정도로
+                                            슬라이스하고,<br> 깻잎과 꽈리고추는
+                                            씻어서 물기를 제거합니다.
+                                            <br> 김밥김은 전장을 6등분(10cm×6cm)하여 잘라 준비합니다.
+                                        </p>
+                                    </div><!-- text end -->
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="img/cook2.jpg" alt="">
+                                    </figure>
+                                    <div class="text">
+                                        <div>
+                                            <h1>STEP 2</h1>
+                                            <p>믹싱볼에 달걀과 물을 섞다가 튀김가루를 추가해 튀김 반죽을 만들어 주세요.
+                                            </p>
+                                        </div>
+                                        <div class="tip">
+                                            <h4>TIP !</h4>
+                                            <p>반죽은 너무 많이 젓지 않도록 하고, 차가운 물을 사용하시면 바삭한 튀김 옷을 만들 수 있답니다.</p>
+                                        </div>
+                                    </div><!-- text end -->
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="img/cook3.jpg" alt="">
+                                    </figure>
+                                    <div class="text">
+                                        <h1>STEP 3</h1>
+                                        <p>시판 계란 간장과 물을 섞어 소스 볼에 옮겨 담아 주세요.
+                                    </div><!-- text end -->
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="img/cook4.jpg" alt="">
+                                    </figure>
+                                    <div class="text">
+                                        <h1>STEP 4</h1>
+                                        <p>
+
+                                            깊이가 있는 냄비에 기름을 넣고 170℃로 데워지면<br> 전어와 채소들을 튀김 덧가루, 튀김 반죽 순서로 묻혀 바삭하게
+                                            튀겨냅니다.
+                                        </p>
+                                    </div><!-- text end -->
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="img/cook5.jpg" alt="">
+                                    </figure>
+                                    <div class="text">
+                                        <h1>STEP 5</h1>
+                                        <p>덮밥 그릇에 밥을 담고 덮밥 소스를 살짝 뿌린 뒤 전어와 채소 튀김을 보기 좋게 올려 완성합니다.<br> 남은 덮밥 소스는 취향에
+                                            맞게
+                                            곁들일 수 있도록 따로 준비합니다.
+                                        </p>
+                                    </div><!-- text end -->
+                                </div>
+                            </div><!-- wrapper end -->
+
+                        </div><!-- swiper2 end -->
+                        <div class="swiper-pagination2"></div>
+                    </div><!-- left end -->
+
+
+                    <!--   <div class="right">
+                            <div class="text">
+                                <h1>STEP 1</h1>
+                                <p>기본 손질이 된 전어는 맛술, 소금을 뿌려 잠시 두었다가 물기를 제거합니다.<br> 단호박과 고구마는 3mm 정도로 슬라이스하고,<br> 깻잎과 꽈리고추는
+                                    씻어서 물기를 제거합니다.
+                                    <br> 김밥김은 전장을 6등분(10cm×6cm)하여 잘라 준비합니다.
+                                </p>
+                            </div>!-- text end -->
+                    <!-- </div> --><!-- right end -- -->
+
+                </div><!-- cook end -->
+            </div><!-- inner end -->
+        </div><!-- products end -->
+    </section><!-- sec5 end -->
+
+    <div class="products1024"><!--  data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500" -->
+        
+        <div class="inner">
+            <h2>관련상품</h2>
+            <div class="swiper swiper4">
+                <div class="swiper-wrapper list">
+                    <div class="swiper-slide item">
+                        <figure>
+                            <img src="img/item1.jpg" alt="">
+                        </figure>
+                        <p>[새벽시장] 깻잎 30장(30g)</p>
+                    </div><!-- item end -->
+                    <div class="swiper-slide item">
+                        <figure>
+
+                            <img src="img/item2.jpg" alt="">
+                        </figure>
+                        <p>[풀무원] 김밥김 (20g)</p>
+
+                    </div><!-- item end -->
+                    <div class="swiper-slide item">
+                        <figure>
+
+                            <img src="img/item3.jpg" alt="">
+                        </figure>
+                        <p>[테라오카] 계란에 뿌리는 <br>간장소스 (150ml)</p>
+
+                    </div><!-- item end -->
+                    <div class="swiper-slide item">
+                        <figure>
+
+                            <img src="img/item4.jpg" alt="">
+                        </figure>
+
+                        <p>[올리타리아] 포도씨유 500ml</p>
+
+                    </div><!-- item end -->
+                    <div class="swiper-slide item">
+                        <figure>
+
+                            <img src="img/item5.jpg" alt="">
+                        </figure>
+                        <p>[청정원] 생강&매실 맛술 (410ml)</p>
+
+                    </div><!-- item end -->
+                    <div class="swiper-slide item">
+                        <figure>
+
+                            <img src="img/item6.jpg" alt="">
+                        </figure>
+
+                        <p>[굿앤굿] 솔밭 자연방목 유정란 15구 (780g)</p>
+                    </div><!-- item end -->
+                    <div class="swiper-slide item">
+                        <figure>
+
+                            <img src="img/item7.jpg" alt="">
+                        </figure>
+                        <p>[굿앤굿] 솔밭 자연방목 유정란 15구 (780g)</p>
+                    </div><!-- item end -->
+                    <div class="swiper-slide item">
+                        <figure>
+
+                            <img src="img/item8.jpg" alt="">
+                        </figure>
+                        <p>[굿앤굿] 솔밭 자연방목 유정란 15구 (780g)</p>
+                    </div><!-- item end -->
+
+                </div><!-- swiper list end -->
+
+            </div><!-- swiper4 end -->
+
+
+           
+        </div><!-- inner end -->
+    </div><!-- products end -->
+
+    <div class="banner">
+        <div class="list">
+            <div class="left">
+                <a href="#">
+                    <figure>
+                        <img src="img/banner4.jpg" alt="">
+                    </figure>
+                    <p>홈파티 메인요리로<br>내어도 손색 없는 <br>'방어 파피요트'</p>
+                </a>
+            </div><!-- left end -->
+            <div class="right">
+                <a href="#">
+                    <figure>
+                        <img src="img/banner2.jpg" alt="">
+                    </figure>
+                    <p>지친 일상에<BR> 활기를 북돋아 줄<BR> '돌문어 열무국수'</p>
+                </a>
+            </div><!-- left end -->
+        </div><!-- list end -->
+    </div><!-- banner -->
+
+    <div class="banner1024">
+        <div class="list">
+            <h2>계절식탁캘린더</h2>
+
+            <div class="left">
+                <a href="#">
+                    <figure>
+                        <img src="img/banner4.jpg" alt="">
+                    </figure>
+                    <p>홈파티 메인요리로<br>내어도 손색 없는 <br>'방어 파피요트'</p>
+                </a>
+            </div><!-- left end -->
+            <div class="right">
+                <a href="#">
+                    <figure>
+                        <img src="img/banner2.jpg" alt="">
+                    </figure>
+                    <p>지친 일상에<BR> 활기를 북돋아 줄<BR> '돌문어 열무국수'</p>
+                </a>
+            </div><!-- left end -->
+        </div><!-- list end -->
+    </div><!-- banner -->
+
+    <section class="sec6">
+        <div class="inner">
+            <div class="title">
+                Organic Syrups, THE BACANHA
+                <p>자연의 순수함이 고스란히 담긴 시럽의 명품, BACANHA를 만나보세요.</p>
+            </div><!-- title end -->
+            <div class="list">
+                <div class="item"><a href="#">
+                        <figure><img src="img/시럽1.png" alt=""></figure>
+                    </a>
+                </div>
+                <div class="item item2"><a href="#">
+                        <figure><img src="img/ff2d4eb1b92b86ed691eef9e0226b37b.png" alt="">
+                            <h1>
+                                    <img class="mhlogo" src="img/mh_logowhite.png" alt=""></h1>
+                        </figure>
+                    </a>
+                </div>
+                <div class="item"><a href="#">
+                        <figure><img src="img/시럽2.png" alt=""></figure>
+                </div></a>
+            </div><!-- list end -->
+            <p>이미지를 클릭하면, 해당 페이지로 연결됩니다.</p>
+        </div><!-- inner end -->
+    </section><!-- sec6 end -->
+
+    <section class="sec7">
+        <div class="inner">
+            <div class="title">ONLY TO HOME</div>
+            <div class="tohome">
+                <div class="left">
+                    <ul>
+                        <li class="on">전체보기</li>
+                        <li>투홈단독맛집</li>
+                        <li>명인명촌</li>
+                        <li>그리팅</li>
+                        <li>원테이블</li>
+                        <li>윌리엄스소노마</li>
+                        <li>HBYH</li>
+                    </ul><!-- left end -->
+                </div>
+                <div class="right">
+                    <div class="menu">
+                        <h3>전체보기 <span></span>건</h3>
+                        <ul class="itemlist">
+                            <li class="on">추천순</li>
+                            <li>인기상품순</li>
+                            <li>할인율높은순</li>
+                            <li>낮은가격순</li>
+                            <li>높은가격순</li>
+                        </ul><!-- item list end -->
+                    </div><!-- menu end -->
+                    <div class="list on">
+                        <div class="item order1">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈1.jpg" alt="">
+                                </figure>
+                                <div class="text">
+                                    <p>[원테이블] 바삭한 황태구이 와사비마요 65g</p>
+                                    <ul class="text1">
+                                        <div>
+                                            <li>6,000원</li>
+                                            <li><span>10g당 923원</span></li>
+                                        </div>
+                                        <li>
+                                            <h1><img src="img/cart.png" alt=""></h1>
+                                        </li>
+                                    </ul>
+                                </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+
+                        <div class="item item2">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈2-1.jpg" alt="">
+                                    <div class="text">
+                                        <p>[명인명촌] 이정하 유기농 마늘장아찌 250g</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>12,400원</li>
+                                                <li><span>10g당 496원</span></li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+
+                        <div class="item item1 order4">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈3-1.jpg" alt="">
+                                    <h4>투홈단독</h4>
+                                </figure>
+                                <div class="text">
+                                    <p>[호쿠신] 유바리 멜론젤리 250g (125g*2)</p>
+                                    <ul class="text1">
+                                        <div>
+                                            <li>13,200원</li>
+                                            <li><span>10g당 528원</span></li>
+                                        </div>
+                                        <li>
+                                            <h1><img src="img/cart.png" alt=""></h1>
+                                        </li>
+                                    </ul>
+                                </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+
+                        <div class="item order2">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈4-1.jpg" alt="">
+                                    <div class="text">
+                                        <p>[그리팅] 보양 추어탕 550g</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>9,000원</li>
+                                                <li><span>10g당 164원</span></li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈5.jpg" alt="">
+                                    <div class="text">
+                                        <p>[HBYH] 레오토만 핸드페인팅 메탈트레이 타원형 (택1)</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>180,000원</li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+
+                        <div class="item item2">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈6.jpg" alt="">
+                                    <div class="text">
+                                        <p>[명인명촌] 이길만 석류 100ml×24포</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>70,000원</li>
+                                                <li><span>100ml당 2,917원</span></li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈7.jpg" alt="">
+                                    <div class="text">
+                                        <p>[그리팅] 바베큐 폭립 700g</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>22,000원</li>
+                                                <li><span>100g당 3,143원</span></li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item order3">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈8.png" alt="">
+                                    <div class="text">
+                                        <p>[그리팅] 여경래 칠리새우</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <div class="sale">
+                                                    <span>12,600원</span>
+                                                    <li>11,340원</li>
+                                                </div><!-- sale end -->
+                                                <li class="price"><span>100g당 2,908원</span></li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈9.jpg" alt="">
+                                    <div class="text">
+                                        <p>[원테이블] 양구 펀치볼 시래기밥 (리뉴얼/474g)</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>6,000원</li>
+                                                <li><span>100g당 1,266원</span></li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item item2">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈10.jpg" alt="">
+                                    <div class="text">
+                                        <p>[명인명촌] 이득자 약선식혜 1L</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>9,500원</li>
+                                                <li><span>100g당 950원</span></li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item item2">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈11.jpg" alt="">
+                                    <div class="text">
+                                        <p>[명인명촌] 이기승 백도라지분말꿀 200g</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>32,000원</li>
+                                                <li><span>100g당 1,600원</span></li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈12.jpg" alt="">
+                                    <div class="text">
+                                        <p>[HBYHx희녹] 탈취 정화수, 용기, 린넨백 (택1)</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>5,000원</li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item item1">
+                            <a href="#">
+                                <figure>
+                                    <h4>투홈단독</h4>
+
+                                    <img src="img/투홈13.jpg" alt="">
+                                    <div class="text">
+                                        <p>[뚜르띠에르] 마롱 캐러멜 스프레드</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>15,000원</li>
+                                                <li><span>100g당 3,571원</span></li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈14.jpg" alt="">
+                                    <div class="text">
+                                        <p>[태극당] 정통오란다 세트(12개입)</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>28,000원</li>
+                                                <li><span>100g당 8,187원</span></li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item item1">
+                            <a href="#">
+                                <figure>
+                                    <h4>투홈단독</h4>
+
+                                    <img src="img/투홈15.jpg" alt="">
+                                    <div class="text">
+                                        <p>[뚜르띠에르] 배간장 & 마롱 스프레드 선물 세트 (550ml + 250g)</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>34,000원</li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item item1">
+                            <a href="#">
+                                <figure>
+                                    <h4>투홈단독</h4>
+
+                                    <img src="img/투홈16.jpg" alt="">
+                                    <div class="text">
+                                        <p>[뚜르띠에르] 배간장 소스</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>19,000원</li>
+                                                <li><span>100g당 3,800원</span></li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item order5">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈17.jpg" alt="">
+                                    <div class="text">
+                                        <p>[그리팅] 오이지미역냉국</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <div class="sale">
+                                                    <span>6,000원</span>
+                                                    <li>5,400원</li>
+                                                </div><!-- sale end -->
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item order6">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈18.jpg" alt="">
+                                    <div class="text">
+                                        <p>[그리팅] 쇠고기 미역국 200g</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <div class="sale">
+                                                    <span>5,300원</span>
+                                                    <li>4,770원</li>
+                                                </div><!-- sale end -->
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item order7">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈19.jpg" alt="">
+                                    <div class="text">
+                                        <p>[그리팅] 녹두크림리조토 (582g)</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <div class="sale">
+                                                    <span>10,500원</span>
+                                                    <li>9,450원</li>
+                                                </div><!-- sale end -->
+                                                <li class="price"><span>100g당 1,624원</span></li>
+
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item item3 order8">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈20.jpg" alt="">
+                                    <div class="text">
+                                        <p>[그리팅] 짬뽕덮밥&두부탕수 (290g)</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <div class="sale">
+                                                    <span>6,900원</span>
+                                                    <li>6,210원</li>
+                                                </div><!-- sale end -->
+                                                <li class="price"><span>100g당 2,141원</span></li>
+
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈21.jpg" alt="">
+                                    <div class="text">
+                                        <p>[원테이블] 비건 다크초코 크래커 50g</p>
+                                        <ul class="text1">
+                                            <div>
+
+                                                <li>2,500원</li>
+
+                                                <li><span>10g당 500원</span></li>
+
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈23.png" alt="">
+                                    <div class="text">
+                                        <p>[원테이블] 비건 채소 크래커 50g</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>2,500원</li>
+                                                <li><span>10g당 500원</span></li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈22.jpg" alt="">
+                                    <div class="text">
+                                        <p>[원테이블] 비건 유자 크래커 50g</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>2,500원</li>
+                                                <li><span>10g당 500원</span></li>
+
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/윌리엄.jpg" alt="">
+                                    <div class="text">
+                                        <p>[윌리엄스소노마] 더블 월 커피 글라스웨어 (택1)</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>19,900원</li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/윌리엄1.jpg" alt="">
+                                    <div class="text">
+                                        <p>[윌리엄스소노마] 팬트리 에스프레소 머그 S/6</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>65,000원</li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/윌리엄2.jpg" alt="">
+                                    <div class="text">
+                                        <p>[윌리엄스소노마] 케맥스 6컵 우드 칼라 글라스 커피메이커</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>66,900원</li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/윌리엄3.jpg" alt="">
+                                    <div class="text">
+                                        <p>[윌리엄스소노마] 올리브우드 치즈 나이프 S3</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>47,900원</li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/윌리엄4.jpg" alt="">
+                                    <div class="text">
+                                        <p>[윌리엄스소노마] 베지터블 필러 세트 S3</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>39,900원</li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/hbyh.jpg" alt="">
+                                    <div class="text">
+                                        <p>[HBYH x 바이에딧] 스페셜 에디션 보냉백 </p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>239,000원</li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/hbyh1.jpg" alt="">
+                                    <div class="text">
+                                        <p>[HBYH] 아바카 식탁매트 (택1)</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>45,000원</li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/hbyh2.jpg" alt="">
+                                    <div class="text">
+                                        <p>[HBYH] PB 풋타올(스몰) 10종 (택1)</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>25,000원</li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+
+                    </div><!-- list end -->
+
+                    <div class="list">
+                        <div class="item item1">
+                            <a href="#">
+                                <figure>
+                                    <h4>투홈단독</h4>
+
+                                    <img src="img/투홈3-1.jpg" alt="">
+                                </figure>
+                                <div class="text">
+                                    <p>[호쿠신] 유바리 멜론젤리 250g (125g*2)</p>
+                                    <ul class="text1">
+                                        <div>
+                                            <li>13,200원</li>
+                                            <li><span>10g당 528원</span></li>
+                                        </div>
+                                        <li>
+                                            <h1><img src="img/cart.png" alt=""></h1>
+                                        </li>
+                                    </ul>
+                                </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item item1">
+                            <a href="#">
+                                <figure>
+                                    <h4>투홈단독</h4>
+
+                                    <img src="img/투홈16.jpg" alt="">
+                                    <div class="text">
+                                        <p>[뚜르띠에르] 배간장 소스</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>19,000원</li>
+                                                <li><span>100g당 3,800원</span></li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item item1">
+                            <a href="#">
+                                <figure>
+                                    <h4>투홈단독</h4>
+
+                                    <img src="img/투홈15.jpg" alt="">
+                                    <div class="text">
+                                        <p>[뚜르띠에르] 배간장 & 마롱 스프레드 선물 세트 (550ml + 250g)</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>34,000원</li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item item1">
+                            <a href="#">
+                                <figure>
+                                    <h4>투홈단독</h4>
+
+                                    <img src="img/투홈13.jpg" alt="">
+                                    <div class="text">
+                                        <p>[뚜르띠에르] 마롱 캐러멜 스프레드</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>15,000원</li>
+                                                <li><span>100g당 3,571원</span></li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                    </div><!-- list end -->
+
+                    <div class="list">
+                        <div class="item item2">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈11.jpg" alt="">
+                                    <div class="text">
+                                        <p>[명인명촌] 이기승 백도라지분말꿀 200g</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>32,000원</li>
+                                                <li><span>100g당 1,600원</span></li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item item2">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈10.jpg" alt="">
+                                    <div class="text">
+                                        <p>[명인명촌] 이득자 약선식혜 1L</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>9,500원</li>
+                                                <li><span>100g당 950원</span></li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item item2">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈6.jpg" alt="">
+                                    <div class="text">
+                                        <p>[명인명촌] 이길만 석류 100ml×24포</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>70,000원</li>
+                                                <li><span>100ml당 2,917원</span></li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                    </div><!-- list end -->
+
+                    <div class="list">
+                        <div class="item item3">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈20.jpg" alt="">
+                                    <div class="text">
+                                        <p>[그리팅] 짬뽕덮밥&두부탕수 (290g)</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <div class="sale">
+                                                    <span>6,900원</span>
+                                                    <li>6,210원</li>
+                                                </div><!-- sale end -->
+                                                <li><span class="price">100g당 2,141원</span></li>
+
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈19.jpg" alt="">
+                                    <div class="text">
+                                        <p>[그리팅] 녹두크림리조토 (582g)</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <div class="sale">
+                                                    <span>10,500원</span>
+                                                    <li>9,450원</li>
+                                                </div><!-- sale end -->
+                                                <li class="price"><span>100g당 1,624원</span></li>
+
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈17.jpg" alt="">
+                                    <div class="text">
+                                        <p>[그리팅] 오이지미역냉국</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <div class="sale">
+                                                    <span>6,000원</span>
+                                                    <li>5,400원</li>
+                                                </div><!-- sale end -->
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈18.jpg" alt="">
+                                    <div class="text">
+                                        <p>[그리팅] 쇠고기 미역국 200g</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <div class="sale">
+                                                    <span>5,300원</span>
+                                                    <li>4,770원</li>
+                                                </div><!-- sale end -->
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈7.jpg" alt="">
+                                    <div class="text">
+                                        <p>[그리팅] 바베큐 폭립 700g</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>22,000원</li>
+                                                <li><span>100g당 3,143원</span></li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈8.png" alt="">
+                                    <div class="text">
+                                        <p>[그리팅] 여경래 칠리새우</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <div class="sale">
+                                                    <span>12,600원</span>
+                                                    <li>11,340원</li>
+                                                </div><!-- sale end -->
+                                                <li class="price"><span>100g당 2,908원</span></li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈4-1.jpg" alt="">
+                                    <div class="text">
+                                        <p>[그리팅] 보양 추어탕 550g</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>9,000원</li>
+                                                <li><span>10g당 164원</span></li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+
+                    </div><!-- list end -->
+
+                    <div class="list">
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈21.jpg" alt="">
+                                    <div class="text">
+                                        <p>[원테이블] 비건 다크초코 크래커 50g</p>
+                                        <ul class="text1">
+                                            <div>
+
+                                                <li>2,500원</li>
+
+                                                <li><span>10g당 500원</span></li>
+
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈23.png" alt="">
+                                    <div class="text">
+                                        <p>[원테이블] 비건 채소 크래커 50g</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>2,500원</li>
+                                                <li><span>10g당 500원</span></li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈22.jpg" alt="">
+                                    <div class="text">
+                                        <p>[원테이블] 비건 유자 크래커 50g</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>2,500원</li>
+                                                <li><span>10g당 500원</span></li>
+
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈9.jpg" alt="">
+                                    <div class="text">
+                                        <p>[원테이블] 양구 펀치볼 시래기밥 (리뉴얼/474g)</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>6,000원</li>
+                                                <li><span>100g당 1,266원</span></li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+
+                        <div class="item item5">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈1.jpg" alt="">
+                                </figure>
+                                <div class="text">
+                                    <p>[원테이블] 바삭한 황태구이 와사비마요 65g</p>
+                                    <ul class="text1">
+                                        <div>
+                                            <li>6,000원</li>
+                                            <li><span>10g당 923원</span></li>
+                                        </div>
+                                        <li>
+                                            <h1><img src="img/cart.png" alt=""></h1>
+                                        </li>
+                                    </ul>
+                                </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+
+                        <div class="item"></div>
+
+                    </div><!-- list end -->
+
+                    <div class="list">
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/윌리엄.jpg" alt="">
+                                    <div class="text">
+                                        <p>[윌리엄스소노마] 더블 월 커피 글라스웨어 (택1)</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>19,900원</li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/윌리엄1.jpg" alt="">
+                                    <div class="text">
+                                        <p>[윌리엄스소노마] 팬트리 에스프레소 머그 S/6</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>65,000원</li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/윌리엄2.jpg" alt="">
+                                    <div class="text">
+                                        <p>[윌리엄스소노마] 케맥스 6컵 우드 칼라 글라스 커피메이커</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>66,900원</li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/윌리엄3.jpg" alt="">
+                                    <div class="text">
+                                        <p>[윌리엄스소노마] 올리브우드 치즈 나이프 S3</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>47,900원</li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/윌리엄4.jpg" alt="">
+                                    <div class="text">
+                                        <p>[윌리엄스소노마] 베지터블 필러 세트 S3</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>39,900원</li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                    </div><!-- list end -->
+
+                    <div class="list">
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈12.jpg" alt="">
+                                    <div class="text">
+                                        <p>[HBYHx희녹] 탈취 정화수, 용기, 린넨백 (택1)</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>5,000원</li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/투홈5.jpg" alt="">
+                                    <div class="text">
+                                        <p>[HBYH] 레오토만 핸드페인팅 메탈트레이 타원형 (택1)</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>180,000원</li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/hbyh.jpg" alt="">
+                                    <div class="text">
+                                        <p>[HBYH x 바이에딧] 스페셜 에디션 보냉백 </p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>239,000원</li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/hbyh1.jpg" alt="">
+                                    <div class="text">
+                                        <p>[HBYH] 아바카 식탁매트 (택1)</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>45,000원</li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/hbyh2.jpg" alt="">
+                                    <div class="text">
+                                        <p>[HBYH] PB 풋타올(스몰) 10종 (택1)</p>
+                                        <ul class="text1">
+                                            <div>
+                                                <li>25,000원</li>
+                                            </div>
+                                            <li>
+                                                <h1><img src="img/cart.png" alt=""></h1>
+                                            </li>
+                                        </ul>
+                                    </div><!-- text end -->
+                            </a>
+                        </div><!-- item end -->
+                    </div><!-- list end -->
+                    <div class="btn1">더보기 +</div>
+                </div><!-- right end -->
+            </div><!-- tohome end -->
+        </div><!-- inner end -->
+    </section><!-- sec7 end -->
+
+    <footer>
+        <div class="top">
+            <figure>
+                <img src="img/icons8-화살표-축소-52.png" alt="">
+            </figure>
+            <h1>TOP</h1>
+        </div><!-- TOP end -->
+        <div class="inner">
+            <div class="fir">
+                <ul class="left">
+                    <li><a href="#">브랜드소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">청소년보호정책</a></li>
+                    <li><a href="#">영상기기운영방침</a></li>
+                </ul>
+
+                <div class="right">
+                    <ul class="icon">
+                        <li>
+                            <h1><a href="#"><img src="img/icons8-유튜브-재생-48 (2).png" alt=""></a></h1>
+                        </li>
+                        <li>
+                            <h1><a href="#"><img src="img/layer2.png" alt=""></a></h1>
+                        </li>
+                        <li>
+                            <h1><a href="#"><img src="img/Layer 1.png" alt=""></a></h1>
+                        </li>
+                    </ul>
+                </div><!-- right end -->
+            </div><!-- fir end -->
+
+            <div class="sec">
+                <div class="left">
+                    <p>(주)현대백화점</p>
+                    <div class="name">
+                        <p>대표이사 : 김형종 외 2인</p>
+                        <p> 주소 : 서울 강남구 테헤란로98길 12 (대치동) 현대백화점</p>
+                    </div>
+                    <div class="call">
+                        <p>전화 : 02-1800-9549</p>
+                        <p>이메일 : tohome@thehyundai.com</p>
+                    </div>
+                    <p class="num">사업자 등록번호 : 211-87-21455 <span><a href="">사업자등록확인</a></span> </p>
+                    <p>통신판매업자 신고번호 : 2010-서울강남-01882</p>
+
+                    <div class="check">
+                        <p>현대식품관 투홈의 개별 판매자가 등록한 상품(브랜드직송) 상품에 대한<br> 광고, 상품주문, 배송, 환불의 의무와 책임은 각 판매자가 부담하고,
+                            <br>현대식품관 투홈은 통신판매 중개자로서의 의무와 책임을 다합니다.
+                        </p>
+                        <p>고객님의 안전거래를 위해 현금결제 시 KG이니시스 구매안전 서비스를 이용하실 수 있습니다. <span>
+                            서비스 가입사실 확인</span></p>
+                    </div><!-- check end -->
+
+                    <p class="copy">Copyright © Hyundai Department Store. All rights reserved.</p>
+
+                </div><!-- left end -->
+                <div class="right">
+                    <select name="Family">
+                        <option value="Family Site">Family Site</option>
+                        <option value="더현대닷컴"><a href="#">더현대닷컴</a></option>
+                        <option value="그리팅(greating)"><a href="#">그리팅(greating)</a></option>
+                        <option value="현대Hmall"><a href="#">현대Hmall</a></option>
+                        <option value="더한섬"><a href="#">더한섬</a></option>
+                        <option value="한섬EQL"><a href="#">한섬EQL</a></option>
+                        <option value="H패션몰"><a href="#">H패션몰</a></option>
+                        <option value="현대백화점 DUTY FREE"><a href="#">현대백화점 DUTY FREE</a></option>
+                        <option value="현대리바트몰"><a href="#">현대리바트몰</a></option>
+                        <option value="현대렌탈케어"><a href="#">현대렌탈케어</a></option>
+                        <option value="H.point"><a href="#">H.point</option>
+                    </select>
+                    <h1 class="footerlogo"><a href="#"><img src="img/logo_footer.png" alt=""></a></h1>
+                </div><!-- right end -->
+            </div><!-- sec end -->
+        </div><!-- inner end -->
+    </footer>
+    </div><!-- wrap end -->
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
