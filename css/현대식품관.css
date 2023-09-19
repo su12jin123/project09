@@ -2978,6 +2978,7 @@ footer .right .footerlogo {
     .main_visual .mobile_menu .gnb .my span {
         padding: 0.5rem;
     }
+
     .sec6 .inner .item2 figure h1 {
         height: 2.7rem;
     }
@@ -3210,21 +3211,10 @@ footer .right .footerlogo {
     }
 
     footer .inner .fir .right ul li h1 {
-        height: 2.3rem;
+        height: 2rem;
     }
-    footer .top {width : 60px;
-                 height: 60px;
-                 bottom: 50px; 
-}
-    footer .top figure img{
-width : 20px;
-        height: 20px;}
 
-footer .top h1{
-    font-size : 1.6rem;
+    .sec2 .inner .list .item figure .text {
+        display: block;
+    }
 }
-    .sec2 .inner .list .item figure .text{
-display : block;}
-}
-
-        
