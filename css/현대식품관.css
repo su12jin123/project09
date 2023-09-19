@@ -3235,4 +3235,7 @@ footer .right .footerlogo {
     .sec6{
         margin-bottom: 10rem;
     }
+    footer .inner .fir .left{
+        width: 150%;
+    }
 }
