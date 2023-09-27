@@ -1913,6 +1913,7 @@ footer .top {
     right: 50px;
     display: none;
     cursor: pointer;
+    z-index: 9;
 }
 
 footer .top figure {
@@ -3000,6 +3001,19 @@ footer .right .footerlogo {
 
     .sec6 .inner .item2 figure h1 {
         height: 2.7rem;
+    }
+    .sec6{
+        margin-bottom: 10rem;
+    }
+    .sec7{
+        margin-bottom: 10rem;
+    }
+    .banner1024{
+        margin-bottom: 10rem;
+    }
+    footer .inner .sec .left .check{display: none;}
+    footer .inner .sec .left .copy{
+        margin-top: 4rem;
     }
 }
 
