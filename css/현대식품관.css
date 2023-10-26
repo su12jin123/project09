@@ -42,12 +42,12 @@ header {
     left: 0;
     z-index: 5;
     width: 100%;
-    max-width: 1920px;
+   /*  max-width: 1920px; */
 }
 
 header .inner {
     max-width: 1440px;
-    width: calc(100% - 20px);
+    width: calc(100% - 45px);
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -122,6 +122,7 @@ header .inner h1 a {
     width: 100%;
     position: relative;
     height: 100vh;
+    margin: 0 auto;
 }
 
 .main_visual::before {
@@ -157,7 +158,9 @@ header .inner h1 a {
     overflow-y: scroll;
 
 }
-
+.main_visual{
+    overflow: hidden;
+}
 .main_visual .mobile_menu.main {
     width: 100%;
     height: 70px;
@@ -276,10 +279,10 @@ header .inner h1 a {
 
 
 .main_visual video {
-    width: 100%;
+    /* width: 100%; */
     position: absolute;
     object-fit: cover;
-    top: -110px;
+    top: -140px;
     height: 115vh;
 }
 
@@ -781,12 +784,13 @@ header .inner h1 a {
     max-width: 1920px;
     width: 100%;
     position: relative;
-    margin-bottom: 17rem;
+    margin: 0 auto 17rem;
     background: url(../img/명인bg.png);
     height: 100vh;
     background-attachment: fixed;
-    /* background-size: 100%; */
+    background-size: 100%;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .sec3>figure {
@@ -937,8 +941,8 @@ header .inner h1 a {
 .sec3 .right .story3 {
     bottom: 0;
     right: 0px;
-    position: absolute;
-    height: 75%;
+    /* position: absolute; */
+    height: 74.4%;
     /* width: 00%; */
     width: 100%;
 
@@ -954,7 +958,8 @@ header .inner h1 a {
 
 .sec3 .right .story3 div p {
     position: absolute;
-    top: 30px;
+    /* top: 30px; */
+    top: 270px;
     right: 30px;
     z-index: 9;
     font-size: 1.6rem;
@@ -1025,7 +1030,7 @@ header .inner h1 a {
     height: 70px;
     line-height: 70px;
     border-radius: 35px;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #333;
     cursor: pointer;
 }
@@ -1153,6 +1158,7 @@ header .inner h1 a {
     position: relative;
     margin-bottom: 3rem;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .sec5 .name {
@@ -1458,8 +1464,8 @@ header .inner h1 a {
     /* background-color: #ffe9ab; */
     max-width: 1920px;
     width: 100%;
-    margin-bottom: 17rem;
     overflow: hidden;
+    margin: 0 auto 17rem;
 }
 
 .banner .list {
@@ -1846,7 +1852,7 @@ footer {
     color: white;
     padding-bottom: 2rem;
     position: relative;
-
+    margin: 0 auto;
 }
 
 footer .inner {
@@ -1914,7 +1920,9 @@ footer .top {
     display: none;
     cursor: pointer;
     z-index: 9;
+
 }
+
 
 footer .top figure {
     width: 100%;
@@ -2181,7 +2189,7 @@ footer .right .footerlogo {
     }
 
     .main_visual video {
-        height: 830px;
+        height: 100vh;
     }
 
     .sec1 {
@@ -2207,7 +2215,7 @@ footer .right .footerlogo {
     .sec3 .right .story3 div p {
         padding: 2rem;
         position: absolute;
-        top: 40rem;
+        top: 58rem;
         right: 2rem;
         width: 40%;
         height: 12rem;
@@ -2242,7 +2250,6 @@ footer .right .footerlogo {
         display: block;
         width: 100%;
         background-color: rgba(255, 255, 255, 0.9);
-        position: absolute;
         bottom: 2rem;
         text-align: center;
         display: flex;
@@ -2781,7 +2788,7 @@ footer .right .footerlogo {
     .sec3 .right .story3 div p {
         width: 100%;
         right: 0;
-        top: 65%;
+        top: 67%;
         padding: 2rem;
         height: 30%;
     }
